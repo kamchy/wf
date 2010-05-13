@@ -1,0 +1,58 @@
+
+/**
+ * Kolor 1: #336799;| kolor podstawowy 1 - niebieski
+ * Kolor 2: #a91002;| kolor podstawowy 2 - czerwony
+ **/
+
+body, html {
+  padding: 0;
+  margin: 0 auto;
+  width: 760px;
+  color: #444;
+
+}
+
+#header {
+  background: #fff url("img/logo-big.png") no-repeat 0 0;
+  margin-bottom: 3em;
+}
+
+#header {
+  color: #336799;
+}
+#header span  {
+  color: #a91002;
+}
+#header h1:hover span   {
+  color: #336799;
+}
+
+
+#header h1:hover {
+  color: #a91002;
+}
+
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 5em;
+  line-height: 2em;
+  padding-left: 2.5em;
+}
+.mail {
+  color:  #336799;
+  font-size: 1.3em;
+  display: inline;
+}
+.mail span, p span{
+  color:  #a91002;
+}
+
+p {
+  margin-top: 3em;
+}
+p.info {
+  text-align: right;
+}
+
+
