@@ -1,156 +1,147 @@
+/*Czwórka
+ *
+
+ ff6600 link
+ df6c20 visited
+ c87137 h1
+ aa4400 h2 hover
+ 37312d pozost. nagłówki
+
+ * */
+
 @import "reset.css";
-@import "960fluid.css";
+
+/* Traktuj nowe elementy jak divy */
+header, footer, section
+aside, nav, article  {
+  display: block;
+  position: relative;
+
+	/*padding: 0 2em;*/
+	overflow: hidden;
+}
+
+
 body {
-  background: #4987c2 url(img/bg-dots.png) 50% top no-repeat; 
-  border-top: 5px solid #c8394d;
-  color: #f2efb2;
-  margin: 0 auto;
-  min-width: 700px;
-  max-width: 100em;
-  font-family: Banksia, "Trebuchet MS", Arial, sans-serif;  font-size: 90%; 
-}
-/* ------------ Style podstawowowe ----------------------*/
-
-h1 { font-size: 1.2em; margin: 0.5em 0 0.3em 0;}
-h2, h3, h4 { font-size: 1em; margin: 0.2em 0 0.2em 0; }
-h3, h4 { font-size: 0.8em;  }
-
-
-a {color: #e5c767; text-decoration: none; font-weight: normal;}
-a strong {color: #fab867; text-decoration: none; font-weight: normal;}
-a:hover {color: #fab867; text-decoration: underline; font-weight: normal;}
-a:hover strong {color: #51b51f; text-decoration: none; font-weight: normal;}
-
-img {
-  border: none;
-}
-
-/*------------------- #nav --------------------*/
-/* menu główne */
-
-#nav  {
-  float: right;
-  padding-right: 6%;
-}
-
-#nav li  
-{
-	float: left;
-	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	color: #4f443d;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	line-height: 1.125; /*  Siatka o wys. 18px: 16px (domyślnie) * 1.125 = 18px */
 	text-align: center;
-  padding: 0.5em 1em;
-  background-color: #c8394d;
-  color: #f2efb2;
-  border: 2px solid #f2efb2;
-  margin: 0 1em 1em 0;
 }
 
-#nav li a{ 
-	display: block; 
-	line-height: 1em; 
-	text-decoration: none;
+
+
+body div {
+	text-align: left;
 }
 
-/* synchronizuj z .button */
-#nav a:link, #nav a:visited { color: #f2efb2;}
-#nav li:hover, #nav li:active { background-color: #842532; }
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, "Times New Roman", "Century Schoolbook L", Times, serif;
+	color: #37312d;
+	font-weight: normal;
+}
 
-#nav a#current { color:#fab867; }
+h1 {
+	font-size: 2.8571em;
+	line-height: 1.125em;  /* 27px */
+	margin-top: 0;
+	margin-bottom: 0.75em; /* 18px */
+  color: #c87137;
+}
+h2 { 
+	font-size: 1.5714em;   /* 18px */ 
+	margin-top:1.5em;	   /* 27px */
+	margin-bottom: 0.5em;  /* 9px */
+	line-height: 1;
+  color: #aa4400;
+}
+h3 { 
+	font-size: 1.2857em;
+	margin-bottom: 0.2em;
+	line-height: 1.1;
+}
+h4 { 
+	font-size: 0.875em;   /* 14px */ 
+	margin-top:1.286em;	   /* 18px */
+	margin-bottom: 0.643em; /* 9px */
+	font-size: 1em;
+}
+h5, 
+h6 {
+	 font-size: 0.8125em;  /* 13px */ 
+	 font-size: 1em;
+}
 
-/*-----------------------------------Inne tagi-----------------------------------------*/
+/* @end */
+
+
+header, footer{
+  padding-top: 1.5em;
+	padding-bottom: 2em;
+	position: relative;
+	min-height: 20px;
+  background-color: white;
+}
+
+.col {
+  width: 30%;
+  float: left;
+  display: block;
+  text-align: left;
+  padding-right: 2em;
+}
+.col.last {
+  padding-right: 0;
+}
+
+
+.wrapper {
+	max-width: 100%;
+  width: 60em;
+	margin: 0 auto;
+  padding: 0 2em;
+}
+
+aside {
+  float: left;
+  width: 30%;
+  display: block;
+  text-align: left;
+}
+article.main {
+  padding: 0 2em;
+}
+
 
 /* listy */
-ul { list-style: url('img/bullet.png') }
-ol { list-style: decimal }
-ol li, ul li { line-height: 1.4em }
-img.left { float: left }
-img.right { float: right }
-
-/* -------------- .company -------------*/
-/* biały boks z nazwą domeny */
-.company { 
-  border: 2px solid #3b536c;
-  background: #fff; 
-  color: #336799; 
-}
-.company h1, .company h2 {
-  color: #336799;
-}
-.company h2 {font-size: 0.8em;}
-.company h1>span {color: #c8394d;}
-.company a:hover h1 {color: #c8394d;}
-.company a:hover h1>span {color: #336799;}
-.company img {float: left; padding: 5px;}
-
-/* -------------- box  -------------*/
-.box {
-  font-size: 1em;
-  padding: 0.5em;
-  margin: 0;
-  min-height:60px;
-
-}
-.box img {
-  padding: 0.5em;
-}
-.box ul {
-  list-style: disc;
-  padding-left: 1em;
-}
-/* -------------- .info  -------------*/
-/* niebieskie boksy */
-.info {
-  color: #f2efb2;
-  background: #376a9b;
-  border: 2px solid #f2efb2;
+ul {
+  list-style-type: none;
 }
 
-/* -------------- .content  -------------*/
-/* białe boksy */
-.content {
-  color: #444;
-  background-color: #fff;
-  /*border: 2px solid #376a9b;*/
-  margin-bottom: 0.8em;
-}
-/* -------------- #main-------------*/
-#main {
-  margin: 0.4em 0 0.4em 0;
-}
+/* odnośniki */
 
-#main a{color: #336799; text-decoration: none; font-weight: normal;}
-#main a:hover {color: #c8394d; text-decoration: none; font-weight: normal;}
+a:link {color:#ff6600;}      /* unvisited link */
+a:visited {color:#df6c20;}  /* visited link */
+a:hover {color:#aa4400;}  /* mouse over link */
+a:active {color:#ff0000;}  /* selected link */
 
-/*------------ button ------------*/
-.button {
-  background-color: #c8394d;
-  color: #f2efb2;
-  border: 2px solid #f2efb2;
-  text-align: center;
-  margin: 0 45%;
-  padding: 0.3em;
+/* nav */
+nav {
+  float: right;
+  padding-right: 2em;
 }
-a.button { text-decoration: none }
-a.button:hover, a.button:active  { background-color: #842532; }
-a.button:link, a.button:visited { color: #f2efb2;}
-
-/* --------------------- .rounded corners ----------------*/
-#nav li, .box, .button{
-  -webkit-border-radius: 10px; /* Safari, Chrome */
-  -khtml-border-radius: 10px;    /* Konqueror */
-  -moz-border-radius: 10px; /* Firefox */
-   border-radius: 10px;
+nav ul li {
+ float: left;
 }
-/*--------------------- drop shadow ----------------*/
-.content{
-  -o-box-shadow: 2px 2px 10px #fff;
-  -icab-box-shadow: 2px 2px 10px #fff;
-  -khtml-box-shadow: 2px 2px 10px #fff;
-  -moz-box-shadow: 2px 2px 10px #fff;
-  -webkit-box-shadow: 2px 2px 10px #fff;
-  box-shadow: 2px 2px 10px #fff;
-
+nav li a {
+  display: block;
+  padding-right: 0.5em;
+  text-decoration: none;
+  border-bottom: 2px solid white;
 }
-/*------------ inne -------------*/
-
-#head, #footer { margin: 0;}
+nav li a:hover {
+  border-bottom: 2px solid #ff6600;
+}
