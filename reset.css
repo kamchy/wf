@@ -1,6 +1,7 @@
 /* Guides.rubyonrails.org */
 /* Reset.css */
 /* Created January 30, 2009
+ * Modified by: webfaces.pl
 --------------------------------------- */
 
 html, body, div, span, applet, object, iframe,
@@ -25,12 +26,13 @@ a img {border:none;}
 ins {text-decoration: none;}
 del {text-decoration: line-through;}
 
+/* chcemy, aby strony były dostępne
 :focus {
   -moz-outline:0;
   outline:0;
   outline-offset:0;
 }
-
+*/
 /* tables still need 'cellspacing="0"' in the markup */
 table {border-collapse: collapse; border-spacing: 0;}
 caption, th, td {text-align: left; font-weight: normal;}

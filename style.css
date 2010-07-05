@@ -17,7 +17,6 @@ aside, nav, article  {
   display: block;
   position: relative;
 
-	/*padding: 0 2em;*/
 	overflow: hidden;
 }
 
@@ -89,8 +88,6 @@ header, footer{
 	min-height: 20px;
   background-color: #fae6da;
 }
-header hgroup{
-}
 
 header h2 {
   position: relative;
@@ -99,8 +96,7 @@ header h2 {
 
 header hgroup a{
   text-decoration: none;
-  background: #fae6da url("img/tancerki.png") bottom right no-repeat;
-  display: block;
+  display: block; /* dostępność - ramka dla :hover*/
 }
 .col {
   width: 30%;
@@ -109,7 +105,7 @@ header hgroup a{
   text-align: left;
   padding-right: 2em;
 }
-.col.last {
+.last {
   padding-right: 0;
 }
 
@@ -130,11 +126,25 @@ aside {
 article.main {
   padding: 0 2em;
 }
+article ul {
+  margin-bottom: 0.5em;
+}
+article.main li{
+  padding-left: 1em;
+  background-image: url("img/bullet.png");
+  background-repeat: no-repeat;
+  background-position: 0 .3em;
+}
 
+article img {
+  float: left;
+  padding-right:0.5em;
+}
 article .imgbox {
   float: left;
   text-align: center;
 }
+
 .content {
   background:  url("img/tlo-nag.png")  left top repeat-x; 
   padding: 2em 0;
@@ -168,4 +178,9 @@ nav li a {
 }
 nav li a:hover {
   border-bottom: 2px solid #ff6600;
+}
+
+/* focus */
+:focus {
+  border: 1px dotted #ff6600;
 }
