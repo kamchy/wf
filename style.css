@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Georgia, "Times New Roman", "Century Schoolbook L", Times, serif;
 	color: #37312d;
 	font-weight: normal;
+  clear: both;
 }
 
 h1 {
