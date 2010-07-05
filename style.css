@@ -38,6 +38,10 @@ body div {
 	text-align: left;
 }
 
+p {
+	margin-bottom: 0.643em; /* 9px */
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: Georgia, "Times New Roman", "Century Schoolbook L", Times, serif;
 	color: #37312d;
@@ -126,9 +130,10 @@ aside {
 article.main {
   padding: 0 2em;
 }
-article img {
+
+article .imgbox {
   float: left;
-  padding: 0.3em;
+  text-align: center;
 }
 .content {
   background:  url("img/tlo-nag.png")  left top repeat-x; 
