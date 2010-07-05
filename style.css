@@ -95,7 +95,7 @@ header h2 {
   top: -0.5em;
 }
 
-header hgroup a{
+header a{
   text-decoration: none;
   display: block; /* dostępność - ramka dla :hover*/
 }
