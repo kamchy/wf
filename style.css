@@ -51,7 +51,7 @@ h1 {
 	margin-bottom: 0.75em; /* 18px */
   color: #c87137;
 }
-h2 { 
+h2, aside article h1 { 
 	font-size: 1.5714em;   /* 18px */ 
 	margin-top:1.5em;	   /* 27px */
 	margin-bottom: 0.5em;  /* 9px */
@@ -80,20 +80,23 @@ h6 {
 /* header, footer  */
 header, footer{
   padding-top: 1.5em;
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 	position: relative;
 	min-height: 20px;
-  background-color: white;
+  background-color: #fae6da;
+}
+header hgroup{
 }
 
-header{
-  background:  url("img/tlo-nag.png")  left top repeat-x; 
-}
 header h2 {
-  font-size: 1em;
+  position: relative;
+  top: -0.5em;
 }
 
-header hgroup {
+header hgroup a{
+  text-decoration: none;
+  background: #fae6da url("img/tancerki.png") bottom right no-repeat;
+  display: block;
 }
 .col {
   width: 30%;
@@ -127,7 +130,10 @@ article img {
   float: left;
   padding: 0.3em;
 }
-
+.content {
+  background:  url("img/tlo-nag.png")  left top repeat-x; 
+  padding: 2em 0;
+}
 
 /* listy */
 ul {
@@ -153,7 +159,7 @@ nav li a {
   display: block;
   margin: 0 0.25em;
   text-decoration: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #fae6da; /* taki jak header background*/
 }
 nav li a:hover {
   border-bottom: 2px solid #ff6600;
