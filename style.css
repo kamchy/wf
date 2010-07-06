@@ -45,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Georgia, "Times New Roman", "Century Schoolbook L", Times, serif;
 	color: #37312d;
 	font-weight: normal;
-  clear: both;
 }
 
 h1 {
@@ -119,30 +118,34 @@ header a{
 }
 
 aside {
-  float: left;
+  float: right; /* section article ma jednostronny margin i padding */
   width: 30%;
   display: block;
   text-align: left;
 }
-article.main {
-  padding: 0 2em;
+section article {
+  margin-right: 30%;
+  padding-right: 1em;
 }
-article ul {
-  margin-bottom: 0.5em;
-}
-article.main li{
+
+.main li{
   padding-left: 1em;
   background-image: url("img/bullet.png");
   background-repeat: no-repeat;
   background-position: 0 .3em;
 }
+article h1, article h2{
+  clear: both;
+}
 
-article img {
+img {
   float: left;
   padding-right:0.5em;
 }
-article .imgbox {
+.imgbox{
   float: left;
+}
+.imgbox p {
   text-align: center;
 }
 
@@ -154,6 +157,9 @@ article .imgbox {
 /* listy */
 ul {
   list-style-type: none;
+}
+ul {
+  margin-bottom: 0.5em;
 }
 
 /* odnośniki */
@@ -184,4 +190,9 @@ nav li a:hover {
 /* focus */
 :focus {
   border: 1px dotted #ff6600;
+}
+
+footer {
+  width: 100%;
+  clear: both;
 }
