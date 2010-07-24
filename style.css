@@ -98,6 +98,15 @@ header a{
   text-decoration: none;
   display: block; /* dostępność - ramka dla :hover*/
 }
+
+/* można wymusić, aby h1 był zawsze pomarańczowy, ale może lepiej, żeby zachowywał się jak zwykły odnośnik? */
+header h1{
+  color:#ff6600;
+}
+header img {
+  padding-right: 1em;
+}
+
 .col {
   width: 30%;
   float: left;
