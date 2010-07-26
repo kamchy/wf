@@ -78,6 +78,10 @@ h6 {
 	 font-size: 1em;
 }
 
+dt {
+	font-weight: bold;
+}
+
 /* @end */
 
 /* header, footer  */
