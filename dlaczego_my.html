@@ -69,50 +69,48 @@
             <h2 id="szybkosc">Szybkie wczytywanie strony</h2>
             <p>Wiemy, że wolne wczytywanie strony w łagodnym przypadku tylko irytuje odwiedzających, w najgorszym skutkuje całkowitym zaniechaniem odwiedzin. Na każdym z etapów tworzenia strony przygotowujemy ją z myślą jej szybkiego wczytywania. </p>
             <p>Najczęściej wykorzystywane przez nas techniki:</p>
-            <ul>
-            <li><b>Optymalizacja kodu</b></li>
-              <ul>
-                <li><b>wykorzystanie odpowiednich struktur HTML w połączeniu z CSS</b></li>
-                <p>pozwala na znaczne (wielokrotne!) zmniejszenie objętości strony, co przyspiesza jej wczytywanie</p>
-                <li><b>ekspercka znajomość CSS-a</b></li>
-                <p>bardzo dobra znajomość CSS umożliwia nam wykorzystanie go w sposób optymalny, np. poprzez ograniczenie liczby reguł i klas do minimum</p>
-                <li><b>umieszczenie kodu CSS, JavaScript w osobnych plikach</b></li>
-                <p>technika ta pozwala na szybkie wczytywanie plików w czasie chodzenia po witrynie, poprzez współpracę z pamięcią podręczną.</p>
-                <li><b>kompresja kodu</li></b>
-                <p>(na życzenie klienta) wykorzystujemy narzędzia kompresji kodu, zmiejszające rozmiary plików</p>
-              </ul>
-            <li><b>Optymalizacja grafiki</b></li>
-              <ul>
-                <li><b>grafiki przygotowujemy w optymalnych formatach</b></li>
-                <p>jpg, png, gif... Rozszerzenie ma znaczenie. Wiemy, w jaki sposób przeformatować obrazek, aby łączył w sobie jakoś z małą objętością.</p>
-                <li><b>wykorzystanie techniki wtapiania grafiki w tło </b></li>
-                <p>połączenie obrazka z kolorystycznie dopasowanym tłem pozwala na symulację dużego obszaru wizualnego z zaledwie kilkudziesięciobajtowym plikiem graficznym.</p>
-                <li><b>wykorzystanie właściwości repeat-x, repeat-y do symulacji dużych obszarów tła</b></li>
-                <p>dzięki zastosowaniu tej wiedzy strona może sprawiać wrażenie na bogato wypełnioną grafiką, a jednocześnie będzie wczytywana szybko.</p>
-                <li><b>odpowiedni rozmiar obrazków</b></li>
-                <p>dbamy o niewielki rozmiar grafik, nie skalujemy obrazków za pomocą HTML-a.</p>
-              </ul>
-            <li><b>Wykorzystanie prostych technologii</b></li>
+              <h3>Optymalizacja kodu</h3>
+              <dl>
+                <dt>wykorzystanie odpowiednich struktur HTML w połączeniu z CSS</dt>
+                <dd>pozwala na znaczne (wielokrotne!) zmniejszenie objętości strony, co przyspiesza jej wczytywanie</dd>
+                <dt>ekspercka znajomość CSS-a</dt>
+                <dd>bardzo dobra znajomość CSS umożliwia nam wykorzystanie go w sposób optymalny, np. poprzez ograniczenie liczby reguł i klas do minimum</dd>
+                <dt>umieszczenie kodu CSS, JavaScript w osobnych plikach</dt>
+                <dd>technika ta pozwala na szybkie wczytywanie plików w czasie chodzenia po witrynie, poprzez współpracę z pamięcią podręczną.</dd>
+                <dt>kompresja kodu</dt>
+                <dd>(na życzenie klienta) wykorzystujemy narzędzia kompresji kodu, zmiejszające rozmiary plików</dd>
+              </dl>
+            <h3>Optymalizacja grafiki</h3>
+              <dl>
+                <dt>grafiki przygotowujemy w optymalnych formatach</dt>
+                <dd>jpg, png, gif... Rozszerzenie ma znaczenie. Wiemy, w jaki sposób przeformatować obrazek, aby łączył w sobie jakoś z małą objętością.</dd>
+                <dt>wykorzystanie techniki wtapiania grafiki w tło </dt>
+                <dd>połączenie obrazka z kolorystycznie dopasowanym tłem pozwala na symdlację dużego obszaru wizualnego z zaledwie kilkudziesięciobajtowym plikiem graficznym.</dd>
+                <dt>wykorzystanie właściwości repeat-x, repeat-y do symdlacji dużych obszarów tła</dt>
+                <dd>dzięki zastosowaniu tej wiedzy strona może sprawiać wrażenie na bogato wypełnioną grafiką, a jednocześnie będzie wczytywana szybko.</dd>
+                <dt>odpowiedni rozmiar obrazków</dt>
+                <dd>dbamy o niewielki rozmiar grafik, nie skalujemy obrazków za pomocą HTML-a.</dd>
+              </dl>
+            <h3>Wykorzystanie prostych technologii</h3>
               <p>Proste znaczy szybkie. Tam, gdzie to możliwe:</p>
               <ul>
                 <li>zastępujemy JavaScript CSS-em</li>
                 <li>preferujemy lekki, szybki i łatwy w modyfikacji kod HTML zamiast wolnych systemów CMS</li>
                 <li>podpowiadamy, jak zastąpić animacje Flashowe atrakcyjną grafiką statyczną</li>
               </ul>
-            </ul>
 
             <h2 id="wyszukiwarki">Strona przyjazna wyszukiwarkom (Google i innym)</h2>
             <p>Nasze strony piszemy tak, aby ułatwiać wyszukiwarkom (Google i innym) znalezienie i zindeksowanie witryny.</p>
             <ul>
               <li>tworzymy strony o przejrzystej hierarchii i z odnośnikami tekstowymi</li>
               <li>w treści strony uwzględniamy słowa kluczowe - słowa wpisywane w wyszukiwarkach przez potencjalnych odwiedzających </li>
-              <li>do wyświetlania ważnych nazw, elementów zawartości i odnośników używamy zwykle tekstu niż grafiki</li>
+              <li>do wyświetlania ważnych nazw, elementów zawartości i odnośników używamy zwykle tekstu, a nie grafiki</li>
               <li>pamiętamy o odpowiednim wykorzystaniu atrybutu <b>alt</b> dla treści obrazkowych</li>
-              <li>szczególną uwagę kładziemy na odpowiednie wypełnienie elementu <b>title</b>, meta tagów oraz odpowiednie wykorzystanie nagłówków (h1, h2, ...)</li>
+              <li>szczególną uwagę kładziemy na odpowiednie wypełnienie elementu <b>title</b>, znaczników meta oraz odpowiednie wykorzystanie nagłówków (h1, h2, ...)</li>
               <li>używamy odpowiednich nazw plików (dla html, obrazów, ...)</li>
               <li>dla większych witryn tworzymy mapę strony</li>
               <li>dbamy o poprawność kodu HTML, CSS </li>
-              <li>naszych klientom wyjaśniamy, czy jest <a href="http://pl.wikipedia.org/wiki/PageRank">PageRank</a> i co sami mogą zrobić w zakresie lepszego pozycjonowania (rozpowszechnianie linków do strony, umieszczenie strony w katalogach sieciowych itd.)</li>
+              <li>naszych klientom wyjaśniamy, czym jest <a href="http://pl.wikipedia.org/wiki/PageRank">PageRank</a> i co sami mogą zrobić w zakresie lepszego pozycjonowania (rozpowszechnianie linków do strony, umieszczenie strony w katalogach sieciowych itd.)</li>
             </ul>
 
             <h2 id="przegladarki">Poprawne wyświetlanie w różnych przeglądarkach</h2>
@@ -125,20 +123,20 @@
               <li>Opera</li>
             </ul>
             <p>Dokonujemy wszelkich starań, aby minimalizować te rozbieżności:</p>
-            <ul>
-              <li><b>testujemy witrynę w tak wielu przeglądarkach (i ich wersjach) jak to możliwe</b></li>
-              <p>testowanie przeprowadzamy na bieżąco, podczas kolejnych etapów pracy nad stroną.</p>
-              <li><b>używamy prawidłowego i przejrzystego języka (X)HTML i CSS</b></li>
-              <p>wykorzystujemy narzędzia <a href="http://validator.w3.org/">W3C Markup</a> oraz <a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a> 
-              do sprawdzania poprawności naszych kodów. Strona napisana bez błędów składniowych, to najlepszy sposób na zapewnienie prawidłowego wyglądu witryny we wszystkich przeglądarkach.</p>
-              <li><b>posiadamy własną bazę najczęstszych błędów przeglądarek</b></li>
-              <p>jesteśmy świadomi, że bezbłędnie napisana strona nie gwarantuje jej poprawnego wyświetlania. Starsze (choć nie tylko) wersje przeglądarek posiadają błędy, które to uniemożliwiają. 
-              Znamy najczęstsze z nich, dzięki czemu szybko poprawiamy niezgodności w wyświetlaniu witryny.</p>
-            </ul>
+            <dl>
+              <dt>testujemy witrynę w tak wielu przeglądarkach (i ich wersjach) jak to możliwe</dt>
+              <dd>testowanie przeprowadzamy na bieżąco, podczas kolejnych etapów pracy nad stroną.</dd>
+              <dt>używamy prawidłowego i przejrzystego języka (X)HTML i CSS</dt>
+              <dd>wykorzystujemy narzędzia <a href="http://validator.w3.org/">W3C Markup</a> oraz <a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a> 
+              do sprawdzania poprawności naszych kodów. Strona napisana bez błędów składniowych, to najlepszy sposób na zapewnienie prawidłowego wyglądu witryny we wszystkich przeglądarkach.</dd>
+              <dt>posiadamy własną bazę najczęstszych błędów przeglądarek</dt>
+              <dd>jesteśmy świadomi, że bezbłędnie napisana strona nie gwarantuje jej poprawnego wyświetlania. Starsze (choć nie tylko) wersje przeglądarek posiadają błędy, które to uniemożliwiają. 
+              Znamy najczęstsze z nich, dzięki czemu szybko poprawiamy niezgodności w wyświetlaniu witryny.</dd>
+            </dl>
 
             <h2 id="standardy">Zgodność ze standardami sieciowymi</h2>
             <p>Projektując stronę, zawsze mamy na uwadze <a href="http://www.w3.org/standards/webdesign/">standardy sieciowe</a> zdefiniowane przez 
-            <abbr title"World Wide Web Consortium"> W3C<abbr>. Dzięki temu:</p>
+            <abbr title="World Wide Web Consortium"> W3C</abbr>. Dzięki temu:</p>
             <ul>
               <li>wszystkie podstrony posiadają spójny wygląd (zdefiniowany w oddzielnych arkuszach stylu)</li>
               <li>poprawia się czytelność stron, które stają się łatwiejsze do utrzymania w przyszłości</li>
@@ -148,7 +146,7 @@
 
             <h2 id="dostepnosc">Zapewnienie dostępności</h2>
             <p>Dostęp do informacji i technologii komunikacyjnych jest jednym z 
-            <a href="http://www.un.org/disabilities/default.asp?navid=12&pid=150">praw człowieka</a>.
+            <a href="http://www.un.org/disabilities/default.asp?navid=12&amp;pid=150">praw człowieka</a>.
             Dlatego staramy się, aby tworzone przez nas strony były dostępne dla osób z
             różnymi możliwościami. Chcemy przez to ułatwić życie w społeczeństwie osobm 
             starszym, ludziom niedowidzącym lub niewidzącym, mieszańcom terenów wiejskich 
