@@ -209,9 +209,10 @@ nav li a:hover {
   border-bottom: 2px solid #ff6600;
 }
 
-/* focus */
 :focus {
-  border: 1px dotted #ff6600;
+  -moz-outline: 0;
+  outline: 1px dotted red;
+  outline-offset:0;
 }
 
 footer {
